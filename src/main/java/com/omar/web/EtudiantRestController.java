@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.omar.dao.EtudiantRepository;
 import com.omar.entities.Etudiant;
 
-@RestController
+//@RestController
 public class EtudiantRestController {
 
 	@Autowired

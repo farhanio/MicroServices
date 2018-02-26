@@ -46,8 +46,8 @@ public class FormationsApplication implements CommandLineRunner{
 
 		
 		etudiantRepository.save(new Etudiant(null, "Project1", "Lombok", new Formation(1L,null,0,null) ));
-		etudiantRepository.save(new Etudiant(null, "Project2", "Lombok", new Formation(1L,null,0,null) ));
-		etudiantRepository.save(new Etudiant(null, "Project3", "Lombok", new Formation(1L,null,0,null) ));
+		etudiantRepository.save(new Etudiant(null, "Project2", "Lombok", new Formation(2L,null,0,null) ));
+		etudiantRepository.save(new Etudiant(null, "Project3", "Lombok", new Formation(3L,null,0,null) ));
 		
 		formationRepository.findAll().forEach(f-> {
 			System.out.println(f.getNom());

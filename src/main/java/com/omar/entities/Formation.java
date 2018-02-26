@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,6 +26,7 @@ public class Formation implements Serializable{
 	private String nom ;
 	private int duree;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy="formation")
 	private Collection<Etudiant> etudiants;
 	

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyConfig {
 
-	@Bean
+	//@Bean
 	public ResourceConfig getJersey() {
 		ResourceConfig config = new ResourceConfig();
 		config.register(EtudiantRestService.class);
